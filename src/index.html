@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-touch-fullscreen" content="YES">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="/css/index.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <div ui-view> <!--ui-view指令召唤所有的内容-->
+
+  </div>
+  <script type="text/javascript">
+    document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px';
+  </script>
+  <script src="vendor/angular/angular.min.js" charset="utf-8"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script> <!--路由配置-->
+  <script src="vendor/angular-cookies/angular-cookies.min.js" charset="utf-8"></script>
+  <script src="vendor/angular-validation/dist/angular-validation.js" charset="utf-8"></script>
+  <script src="vendor/angular-animate/angular-animate.min.js" charset="utf-8"></script>
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+</html>
